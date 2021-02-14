@@ -6,9 +6,9 @@ How to use js-unwrapper
 ------------
 ```html
 <body>
-    <P>...Code...</P>
+    <p>...Code...</p>
     <div class="js-unwrap" src="stuff.html"></div>
-    <P>...Code...</P>
+    <p>...Code...</p>
     <script src="unwrapper.js"></script>
 </body>
 ```

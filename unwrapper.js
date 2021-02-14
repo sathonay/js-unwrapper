@@ -1,7 +1,7 @@
 
-const unwrap = async wrapper => {
+async function unwrap(wrapper) {
     const toUnwrap = wrapper.getAttribute('src')
-    const response = await fetch(`${toUnwrap}`)
+    const response = await fetch(toUnwrap)
     wrapper.outerHTML = await response.text()
 }
 

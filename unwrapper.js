@@ -1,7 +1,7 @@
 async function unwrapInner(wrapper) {
     const toUnwrap = wrapper.getAttribute('unwrap')
     const response = await fetch(toUnwrap)
-    wrapper.innerHTML = await response.text()
+    wrapper.innerHTML = await response.text() + wrapper.innerHTML;
 }
 
 async function unwrapOuter(wrapper) {

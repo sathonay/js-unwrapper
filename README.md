@@ -17,7 +17,7 @@ or
 
 // Use link every where dudes
 <head>
-    <link class="js-unwrap-outer" unwrap="head.html"><link>
+    <link class="js-unwrap-outer" unwrap="head.html"></link>
 </head>
 <body>
     <p>...Code...</p>

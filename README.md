@@ -12,4 +12,17 @@ How to use js-unwrapper
     <p>...Code...</p>
     <script src="unwrapper.js"></script>
 </body>
+
+or 
+
+// Use link every where dudes
+<head>
+    <link class="js-unwrap-outer" unwrap="head.html"><link>
+</head>
+<body>
+    <p>...Code...</p>
+    <link class="js-unwrap-outer" unwrap="stuff.html"></link>
+    <p>...Code...</p>
+    <script src="unwrapper.js"></script>
+</body>
 ```

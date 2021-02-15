@@ -5,19 +5,11 @@ js-unwrapper is a client-side unwrapper to add content from an other file in you
 How to use js-unwrapper
 ------------
 ```html
-<head class="js-unwrap-inner" unwrap="head.html"></head>
-<body>
-    <p>...Code...</p>
-    <div class="js-unwrap-outer" unwrap="stuff.html"></div>
-    <p>...Code...</p>
-    <script src="unwrapper.js"></script>
-</body>
-
-or 
-
-// Use link every where dudes
+// Server side
 <head>
-    <link class="js-unwrap-outer" unwrap="head.html"></link>
+    <link class="js-unwrap-outer" unwrap="head.html">
+    /*code in link*/
+    </link>
 </head>
 <body>
     <p>...Code...</p>
@@ -25,4 +17,17 @@ or
     <p>...Code...</p>
     <script src="unwrapper.js"></script>
 </body>
+
+//When the browser do the job
+<head>
+    /*code in head.html*/
+    /*code in link*/
+</head>
+<body>
+    <p>...Code...</p>
+    /*code in stuff.html*/
+    <p>...Code...</p>
+    <script src="unwrapper.js"></script>
+</body>
+
 ```

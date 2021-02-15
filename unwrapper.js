@@ -7,7 +7,7 @@ async function unwrapInner(wrapper) {
 async function unwrapOuter(wrapper) {
     const toUnwrap = wrapper.getAttribute('unwrap')
     const response = await fetch(toUnwrap)
-    wrapper.outerHTML = await response.text()
+    wrapper.outerHTML = await response.text() + wrapper.innerHTML;
 }
 
 document.querySelectorAll('.js-unwrap').forEach(unwrapInner)
